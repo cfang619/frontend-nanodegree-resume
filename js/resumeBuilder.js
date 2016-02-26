@@ -46,6 +46,11 @@ $("#topContacts").append(formattedLocation);
 var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
 $("#topContacts").append(formattedGitHub);
 
+$("#footerContacts").append(formattedMobile);
+$("#footerContacts").append(formattedEmail);
+$("#footerContacts").append(formattedLocation);
+$("#footerContacts").append(formattedGitHub);
+
 
 if(bio.skills.length) {
 	var formattedSkills = HTMLskills.replace("%data%", bio.skills[0]);
